@@ -17,7 +17,7 @@ public class JsonStorageManager {
 
     public StorageResult storageFile(File directory, File file, Object object) {
         try {
-            return new JsonStorage(this, directory, file).createOrUpdate(object);
+            return new AbstractJsonStorage(this, directory, file).createOrUpdate(object);
         } catch (Exception e) {
             e.printStackTrace();
         }
