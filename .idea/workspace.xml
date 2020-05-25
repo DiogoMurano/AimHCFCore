@@ -1,6 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8a80c128-17e2-4a7b-b428-20cc3c52cc60" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/deathban/DeathBanListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/storage/json/utils/ItemStackAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/storage/json/utils/LocationAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/HCF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/HCF.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/deathban/DeathBan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/deathban/DeathBan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/storage/database/dao/deathban/DeathBanDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/storage/database/dao/deathban/DeathBanDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/storage/json/AbstractJsonStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/storage/json/AbstractJsonStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/storage/json/JsonStorageManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/storage/json/JsonStorageManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/storage/json/types/DeathBanStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/storage/json/types/DeathBanStorage.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1cMYGNT0MsGpdaZtCNWS8cZ72yR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/database" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Desenvolvimento\Store\Paid\AimHCFCore\src\main\java\xyz\diogomurano\hcf\database\sqlite" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="xyz.diogomurano.hcf.database.dao.deathban" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Desenvolvimento\Store\Paid\AimHCFCore\src\main\java\xyz\diogomurano\hcf\database" />
+      <recent name="C:\Desenvolvimento\Store\Paid\AimHCFCore\src\main\java\xyz\diogomurano\hcf\database\mysql" />
+      <recent name="C:\Desenvolvimento\Store\Paid\AimHCFCore\src\main\java\xyz\diogomurano\hcf\database\sqlite" />
+      <recent name="C:\Desenvolvimento\Store\Paid\AimHCFCore\libs" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8a80c128-17e2-4a7b-b428-20cc3c52cc60" name="Default Changelist" comment="" />
+      <created>1590339832869</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1590339832869</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="765" y="223" key="#com.intellij.ide.util.MemberChooser" timestamp="1590355968173">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="223" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1590355968173" />
+    <state x="526" y="436" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1590342397111">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="526" y="436" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590342397111" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1590339941306">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1590339941306" />
+    <state x="616" y="173" width="670" height="676" key="search.everywhere.popup" timestamp="1590343292534">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="173" width="670" height="676" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1590343292534" />
   </component>
 </project>

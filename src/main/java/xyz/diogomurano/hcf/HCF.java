@@ -2,10 +2,13 @@ package xyz.diogomurano.hcf;
 
 import net.minecraft.util.com.google.gson.Gson;
 import net.minecraft.util.com.google.gson.GsonBuilder;
+import org.bukkit.Location;
 import org.bukkit.plugin.java.JavaPlugin;
 import xyz.diogomurano.hcf.storage.database.DatabaseConnection;
 import xyz.diogomurano.hcf.storage.database.sqlite.SqliteConnection;
 import xyz.diogomurano.hcf.storage.json.JsonStorageManager;
+import xyz.diogomurano.hcf.storage.json.utils.ItemStackAdapter;
+import xyz.diogomurano.hcf.storage.json.utils.LocationAdapter;
 
 import java.io.File;
 import java.io.IOException;
@@ -23,7 +26,10 @@ public class HCF extends JavaPlugin {
     public void onLoad() {
         instance = this;
 
-        gson = new GsonBuilder().create();
+        gson = new GsonBuilder()
+                .registerTypeAdapter(Location.class, new LocationAdapter())
+                .registerTypeAdapter(ItemStackAdapter.class, new ItemStackAdapter())
+                .create();
 
         final File file = new File(getDataFolder(), "database.db");
         saveDefaultConfig();
