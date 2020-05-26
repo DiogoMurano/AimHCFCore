@@ -19,10 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a80c128-17e2-4a7b-b428-20cc3c52cc60" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/storage/database/dao/UserStatisticsDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/storage/database/dao/UserStatisticsDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/storage/database/dao/statistics.java" beforeDir="false" />
-    </list>
+    <list default="true" id="8a80c128-17e2-4a7b-b428-20cc3c52cc60" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -96,10 +93,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="765" y="223" key="#com.intellij.ide.util.MemberChooser" timestamp="1590534116809">
+    <state x="765" y="223" key="#com.intellij.ide.util.MemberChooser" timestamp="1590534297009">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="223" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1590534116809" />
+    <state x="765" y="223" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1590534297009" />
     <state x="526" y="436" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1590342397111">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
