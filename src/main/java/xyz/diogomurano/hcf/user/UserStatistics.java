@@ -3,18 +3,18 @@ package xyz.diogomurano.hcf.user;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
-import lombok.NoArgsConstructor;
+
+import java.util.UUID;
 
 @AllArgsConstructor
-@NoArgsConstructor
 @Builder
 @Data
 public class UserStatistics {
 
+    private final UUID uniqueId;
     private int kills;
     private int deaths;
     private int killStreak;
-    private long playTime;
-    private long lastSeen;
+
 
 }

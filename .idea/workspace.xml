@@ -20,17 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a80c128-17e2-4a7b-b428-20cc3c52cc60" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/deathban/DeathBanListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/storage/json/utils/ItemStackAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/storage/json/utils/LocationAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/storage/database/dao/UserStatisticsDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/storage/database/dao/UserStatisticsDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/storage/database/dao/statistics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/user/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/user/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/HCF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/HCF.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/deathban/DeathBan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/deathban/DeathBan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/storage/database/dao/deathban/DeathBanDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/storage/database/dao/deathban/DeathBanDaoImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/storage/json/AbstractJsonStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/storage/json/AbstractJsonStorage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/storage/json/JsonStorageManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/storage/json/JsonStorageManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/storage/json/types/DeathBanStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/storage/json/types/DeathBanStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/deathban/DeathBanListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/deathban/DeathBanListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/storage/database/Crud.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/storage/database/Crud.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/user/UserStatistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/user/UserStatistics.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,8 +39,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -64,10 +63,8 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Desenvolvimento\Store\Paid\AimHCFCore\src\main\java\xyz\diogomurano\hcf\database\sqlite" />
-    </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="xyz.diogomurano.hcf.user.service" />
       <recent name="xyz.diogomurano.hcf.database.dao.deathban" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -75,6 +72,9 @@
       <recent name="C:\Desenvolvimento\Store\Paid\AimHCFCore\src\main\java\xyz\diogomurano\hcf\database\mysql" />
       <recent name="C:\Desenvolvimento\Store\Paid\AimHCFCore\src\main\java\xyz\diogomurano\hcf\database\sqlite" />
       <recent name="C:\Desenvolvimento\Store\Paid\AimHCFCore\libs" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Desenvolvimento\Store\Paid\AimHCFCore\src\main\java\xyz\diogomurano\hcf\database\sqlite" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -100,12 +100,13 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="765" y="223" key="#com.intellij.ide.util.MemberChooser" timestamp="1590355968173">
+    <state x="765" y="223" key="#com.intellij.ide.util.MemberChooser" timestamp="1590365644124">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="223" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1590355968173" />
+    <state x="765" y="223" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1590365644124" />
     <state x="526" y="436" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1590342397111">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

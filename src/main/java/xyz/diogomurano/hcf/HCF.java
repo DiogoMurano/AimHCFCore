@@ -9,6 +9,8 @@ import xyz.diogomurano.hcf.storage.database.sqlite.SqliteConnection;
 import xyz.diogomurano.hcf.storage.json.JsonStorageManager;
 import xyz.diogomurano.hcf.storage.json.utils.ItemStackAdapter;
 import xyz.diogomurano.hcf.storage.json.utils.LocationAdapter;
+import xyz.diogomurano.hcf.user.service.UserService;
+import xyz.diogomurano.hcf.user.service.UserServiceImpl;
 
 import java.io.File;
 import java.io.IOException;
@@ -21,6 +23,7 @@ public class HCF extends JavaPlugin {
 
     private DatabaseConnection databaseConnection;
     private JsonStorageManager storageManager;
+    private UserService userService;
 
     @Override
     public void onLoad() {
@@ -40,6 +43,7 @@ public class HCF extends JavaPlugin {
         databaseConnection.createTables();
 
         storageManager = new JsonStorageManager(gson);
+        userService = new UserServiceImpl();
     }
 
     @Override
@@ -68,6 +72,10 @@ public class HCF extends JavaPlugin {
 
     public JsonStorageManager getStorageManager() {
         return storageManager;
+    }
+
+    public UserService getUserService() {
+        return userService;
     }
 
     public Gson getGson() {
