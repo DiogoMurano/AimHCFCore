@@ -1,4 +1,4 @@
-package xyz.diogomurano.hcf.listener;
+package xyz.diogomurano.hcf.listener.user;
 
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;

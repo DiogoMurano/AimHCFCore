@@ -15,22 +15,19 @@ import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.event.player.PlayerTeleportEvent;
 import org.bukkit.inventory.InventoryHolder;
 import org.bukkit.material.Openable;
-import xyz.diogomurano.hcf.HCF;
 
 import java.util.Set;
 
 public class PearlGlitchListener implements Listener {
 
     private final Set<Material> blockedPearlTypes;
-    private final HCF plugin;
 
-    public PearlGlitchListener(HCF plugin) {
+    public PearlGlitchListener() {
         this.blockedPearlTypes = Sets.immutableEnumSet(Material.THIN_GLASS, Material.IRON_FENCE, Material.FENCE,
                 Material.NETHER_FENCE, Material.FENCE_GATE, Material.ACACIA_STAIRS, Material.BIRCH_WOOD_STAIRS,
                 Material.BRICK_STAIRS, Material.COBBLESTONE_STAIRS, Material.DARK_OAK_STAIRS, Material.JUNGLE_WOOD_STAIRS,
                 Material.NETHER_BRICK_STAIRS, Material.QUARTZ_STAIRS, Material.SANDSTONE_STAIRS, Material.SMOOTH_STAIRS,
                 Material.SPRUCE_WOOD_STAIRS, Material.WOOD_STAIRS);
-        this.plugin = plugin;
     }
 
     @EventHandler(ignoreCancelled = true, priority = EventPriority.NORMAL)

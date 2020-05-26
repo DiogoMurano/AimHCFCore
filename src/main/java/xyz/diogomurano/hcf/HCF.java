@@ -4,7 +4,9 @@ import net.minecraft.util.com.google.gson.Gson;
 import net.minecraft.util.com.google.gson.GsonBuilder;
 import org.bukkit.Location;
 import org.bukkit.plugin.java.JavaPlugin;
-import xyz.diogomurano.hcf.listener.UserListener;
+import xyz.diogomurano.hcf.listener.fix.PearlGlitchListener;
+import xyz.diogomurano.hcf.listener.user.UserListener;
+import xyz.diogomurano.hcf.listener.world.AutoSmeltListener;
 import xyz.diogomurano.hcf.storage.database.DatabaseConnection;
 import xyz.diogomurano.hcf.storage.database.dao.UserStatisticsDao;
 import xyz.diogomurano.hcf.storage.database.dao.UserStatisticsDaoImpl;
@@ -66,7 +68,12 @@ public class HCF extends JavaPlugin {
     }
 
     private void registerListeners() {
+        //Fix
+        getServer().getPluginManager().registerEvents(new PearlGlitchListener(), this);
+        //User
         getServer().getPluginManager().registerEvents(new UserListener(this), this);
+        //World
+        getServer().getPluginManager().registerEvents(new AutoSmeltListener(), this);
     }
 
     private void createFileOrIgnore(File file) {
