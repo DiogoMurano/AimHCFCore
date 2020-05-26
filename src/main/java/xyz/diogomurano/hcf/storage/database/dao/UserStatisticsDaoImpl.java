@@ -1,9 +1,7 @@
 package xyz.diogomurano.hcf.storage.database.dao;
 
 import xyz.diogomurano.hcf.storage.database.DatabaseConnection;
-import xyz.diogomurano.hcf.user.User;
 import xyz.diogomurano.hcf.user.UserStatistics;
-import xyz.diogomurano.hcf.user.service.UserService;
 
 import java.sql.*;
 import java.util.Optional;
@@ -55,12 +53,14 @@ public class UserStatisticsDaoImpl implements UserStatisticsDao {
 
     @Override
     public void delete(UserStatistics userStatistics) {
-        try (PreparedStatement stmt = getConnection().prepareStatement("DELETE FROM `user_statistics` WHERE `unique_id`=?")) {
-            stmt.setString(1, userStatistics.getUniqueId().toString());
-            stmt.executeUpdate();
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
-        }
+        databaseConnection.execute(() -> {
+            try (PreparedStatement stmt = getConnection().prepareStatement("DELETE FROM `user_statistics` WHERE `unique_id`=?")) {
+                stmt.setString(1, userStatistics.getUniqueId().toString());
+                stmt.executeUpdate();
+            } catch (SQLException throwables) {
+                throwables.printStackTrace();
+            }
+        });
     }
 
     public Connection getConnection() {
@@ -87,7 +87,6 @@ public class UserStatisticsDaoImpl implements UserStatisticsDao {
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
-
         return Optional.ofNullable(statistics);
     }
 }

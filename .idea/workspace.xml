@@ -20,16 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a80c128-17e2-4a7b-b428-20cc3c52cc60" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/storage/database/dao/UserStatisticsDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/storage/database/dao/UserStatisticsDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/storage/database/dao/statistics.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/user/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/user/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/HCF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/HCF.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/deathban/DeathBanListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/deathban/DeathBanListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/storage/database/Crud.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/storage/database/Crud.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/user/UserStatistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/user/UserStatistics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/storage/database/dao/UserStatisticsDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/storage/database/dao/UserStatisticsDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/storage/database/dao/statistics.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,9 +55,8 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="xyz.diogomurano.hcf.user.service" />
-      <recent name="xyz.diogomurano.hcf.database.dao.deathban" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Desenvolvimento\Store\Paid\AimHCFCore\src\main\java\xyz\diogomurano\hcf\database\sqlite" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Desenvolvimento\Store\Paid\AimHCFCore\src\main\java\xyz\diogomurano\hcf\database" />
@@ -73,8 +64,10 @@
       <recent name="C:\Desenvolvimento\Store\Paid\AimHCFCore\src\main\java\xyz\diogomurano\hcf\database\sqlite" />
       <recent name="C:\Desenvolvimento\Store\Paid\AimHCFCore\libs" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Desenvolvimento\Store\Paid\AimHCFCore\src\main\java\xyz\diogomurano\hcf\database\sqlite" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="xyz.diogomurano.hcf.storage.database.dao" />
+      <recent name="xyz.diogomurano.hcf.user.service" />
+      <recent name="xyz.diogomurano.hcf.database.dao.deathban" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -103,14 +96,18 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="765" y="223" key="#com.intellij.ide.util.MemberChooser" timestamp="1590365644124">
+    <state x="765" y="223" key="#com.intellij.ide.util.MemberChooser" timestamp="1590534116809">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="223" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1590365644124" />
+    <state x="765" y="223" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1590534116809" />
     <state x="526" y="436" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1590342397111">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="526" y="436" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590342397111" />
+    <state x="720" y="375" width="481" height="290" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1590533626138">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="720" y="375" width="481" height="290" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1590533626138" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1590339941306">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
