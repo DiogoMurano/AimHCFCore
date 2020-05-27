@@ -6,6 +6,9 @@ import org.bukkit.Location;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.plugin.java.JavaPlugin;
 import xyz.diogomurano.hcf.command.CommandMapUtil;
+import xyz.diogomurano.hcf.command.registry.AbstractCommandRegistry;
+import xyz.diogomurano.hcf.command.registry.ChatControlCommand;
+import xyz.diogomurano.hcf.configurations.MessageTag;
 import xyz.diogomurano.hcf.listener.fix.PearlGlitchListener;
 import xyz.diogomurano.hcf.listener.user.UserListener;
 import xyz.diogomurano.hcf.listener.world.AutoSmeltListener;
@@ -70,6 +73,10 @@ public class HCF extends JavaPlugin {
         databaseConnection.shutdown();
     }
 
+    private void registerCommands() {
+        registerCommand(new ChatControlCommand());
+    }
+
     private void registerListeners() {
         //Fix
         getServer().getPluginManager().registerEvents(new PearlGlitchListener(), this);
@@ -89,8 +96,13 @@ public class HCF extends JavaPlugin {
         }
     }
 
-    public <T extends CommandExecutor> T registerCommand(@Nonnull T command, @Nonnull String... aliases) {
-        return CommandMapUtil.registerCommand(this, command, aliases);
+    private void registerCommand(AbstractCommandRegistry commandRegistry) {
+        commandRegistry.registerCommands();
+        getServer().getPluginManager().registerEvents(commandRegistry, this);
+    }
+
+    public <T extends CommandExecutor> void registerCommand(@Nonnull T command, @Nonnull String... aliases) {
+        CommandMapUtil.registerCommand(this, command, aliases);
     }
 
     public DatabaseConnection getDatabaseConnection() {

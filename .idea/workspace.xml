@@ -20,26 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a80c128-17e2-4a7b-b428-20cc3c52cc60" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/libs/api-paperspigot-api-1.7.10-R0.1-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/Commands.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/command/AbstractCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/command/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/command/CommandInterruptException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/command/CommandMapUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/command/argument/Argument.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/command/argument/ArgumentParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/command/argument/ArgumentParserRegistry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/command/argument/SimpleArgument.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/command/argument/SimpleParserRegistry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/command/context/CommandContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/command/context/ImmutableCommandContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/command/lambda/CommandBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/command/lambda/CommandBuilderImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/command/lambda/LambdaCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/command/lambda/LambdaCommandHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/command/registry/AbstractCommandRegistry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/command/registry/ChatControlCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/configurations/MessageTag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/utils/HashCooldown.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/messages.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/Spigot.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/HCF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/HCF.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +57,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/xyz/diogomurano/hcf/utils" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -77,11 +65,11 @@
       <recent name="C:\Desenvolvimento\Store\Paid\AimHCFCore\src\main\java\xyz\diogomurano\hcf\database\sqlite" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Desenvolvimento\Store\Paid\AimHCFCore\src\main\java\xyz\diogomurano\hcf\utils" />
       <recent name="C:\Desenvolvimento\Store\Paid\AimHCFCore\libs" />
       <recent name="C:\Desenvolvimento\Store\Paid\AimHCFCore\src\main\java\xyz\diogomurano\hcf" />
       <recent name="C:\Desenvolvimento\Store\Paid\AimHCFCore\src\main\java\xyz\diogomurano\hcf\command" />
       <recent name="C:\Desenvolvimento\Store\Paid\AimHCFCore\src\main\java\xyz\diogomurano\hcf\database" />
-      <recent name="C:\Desenvolvimento\Store\Paid\AimHCFCore\src\main\java\xyz\diogomurano\hcf\database\mysql" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="xyz.diogomurano.hcf.storage.database.dao" />
@@ -115,14 +103,14 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="765" y="223" key="#com.intellij.ide.util.MemberChooser" timestamp="1590536193897">
+    <state x="765" y="223" key="#com.intellij.ide.util.MemberChooser" timestamp="1590539464812">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="223" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1590536193897" />
-    <state x="526" y="436" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1590342397111">
+    <state x="765" y="223" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1590539464812" />
+    <state x="526" y="436" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1590539533382">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="526" y="436" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590342397111" />
+    <state x="526" y="436" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590539533382" />
     <state x="720" y="375" width="481" height="290" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1590533626138">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -131,10 +119,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590537296621" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1590339941306">
+    <state x="490" y="174" key="Maven.ArtifactSearchDialog" timestamp="1590537474451">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1590339941306" />
+    <state x="490" y="174" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590537474451" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1590538384477">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1590538384477" />
     <state x="616" y="173" width="670" height="676" key="search.everywhere.popup" timestamp="1590343292534">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
