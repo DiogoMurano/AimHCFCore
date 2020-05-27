@@ -1,6 +1,6 @@
 package xyz.diogomurano.hcf.storage.json.types;
 
-import net.minecraft.util.com.google.gson.Gson;
+import com.google.gson.Gson;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import xyz.diogomurano.hcf.HCF;
@@ -11,7 +11,6 @@ import xyz.diogomurano.hcf.storage.json.StorageResult;
 
 import java.io.File;
 import java.io.FileReader;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.util.UUID;
 import java.util.concurrent.CompletableFuture;

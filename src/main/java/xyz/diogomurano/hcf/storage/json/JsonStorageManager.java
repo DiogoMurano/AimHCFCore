@@ -1,6 +1,6 @@
 package xyz.diogomurano.hcf.storage.json;
 
-import net.minecraft.util.com.google.gson.Gson;
+import com.google.gson.Gson;
 import xyz.diogomurano.hcf.storage.json.types.DeathBanStorage;
 
 import java.util.concurrent.ExecutorService;

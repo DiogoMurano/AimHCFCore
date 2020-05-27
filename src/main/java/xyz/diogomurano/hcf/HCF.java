@@ -1,9 +1,11 @@
 package xyz.diogomurano.hcf;
 
-import net.minecraft.util.com.google.gson.Gson;
-import net.minecraft.util.com.google.gson.GsonBuilder;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import org.bukkit.Location;
+import org.bukkit.command.CommandExecutor;
 import org.bukkit.plugin.java.JavaPlugin;
+import xyz.diogomurano.hcf.command.CommandMapUtil;
 import xyz.diogomurano.hcf.listener.fix.PearlGlitchListener;
 import xyz.diogomurano.hcf.listener.user.UserListener;
 import xyz.diogomurano.hcf.listener.world.AutoSmeltListener;
@@ -17,6 +19,7 @@ import xyz.diogomurano.hcf.storage.json.utils.LocationAdapter;
 import xyz.diogomurano.hcf.user.service.UserService;
 import xyz.diogomurano.hcf.user.service.UserServiceImpl;
 
+import javax.annotation.Nonnull;
 import java.io.File;
 import java.io.IOException;
 
@@ -84,6 +87,10 @@ public class HCF extends JavaPlugin {
                 e.printStackTrace();
             }
         }
+    }
+
+    public <T extends CommandExecutor> T registerCommand(@Nonnull T command, @Nonnull String... aliases) {
+        return CommandMapUtil.registerCommand(this, command, aliases);
     }
 
     public DatabaseConnection getDatabaseConnection() {
